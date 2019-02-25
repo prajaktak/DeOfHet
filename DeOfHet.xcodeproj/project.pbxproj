@@ -14,6 +14,11 @@
 		F91F69E82221EE85007E6E97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F91F69E62221EE85007E6E97 /* LaunchScreen.storyboard */; };
 		F91F69F32221EE85007E6E97 /* DeOfHetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91F69F22221EE85007E6E97 /* DeOfHetTests.swift */; };
 		F91F69FE2221EE85007E6E97 /* DeOfHetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91F69FD2221EE85007E6E97 /* DeOfHetUITests.swift */; };
+		F91F6A112221F328007E6E97 /* EmptyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91F6A102221F328007E6E97 /* EmptyCollectionViewCell.swift */; };
+		F91F6A162221F595007E6E97 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91F6A142221F594007E6E97 /* TitleCollectionViewCell.swift */; };
+		F91F6A1A2221F67F007E6E97 /* ExampleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91F6A182221F67F007E6E97 /* ExampleCollectionViewCell.swift */; };
+		F91F6A1D2221F9FA007E6E97 /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91F6A1C2221F9FA007E6E97 /* PracticeViewController.swift */; };
+		F91F6A1F222489EE007E6E97 /* Objects.plist in Resources */ = {isa = PBXBuildFile; fileRef = F91F6A1E222489EE007E6E97 /* Objects.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		F91F69F92221EE85007E6E97 /* DeOfHetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeOfHetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F91F69FD2221EE85007E6E97 /* DeOfHetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeOfHetUITests.swift; sourceTree = "<group>"; };
 		F91F69FF2221EE85007E6E97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F91F6A102221F328007E6E97 /* EmptyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCollectionViewCell.swift; sourceTree = "<group>"; };
+		F91F6A142221F594007E6E97 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		F91F6A182221F67F007E6E97 /* ExampleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCollectionViewCell.swift; sourceTree = "<group>"; };
+		F91F6A1C2221F9FA007E6E97 /* PracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
+		F91F6A1E222489EE007E6E97 /* Objects.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Objects.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +107,10 @@
 		F91F69DC2221EE65007E6E97 /* DeOfHet */ = {
 			isa = PBXGroup;
 			children = (
-				F91F69DD2221EE65007E6E97 /* AppDelegate.swift */,
-				F91F69DF2221EE65007E6E97 /* ViewController.swift */,
-				F91F69E12221EE65007E6E97 /* Main.storyboard */,
-				F91F69E42221EE85007E6E97 /* Assets.xcassets */,
-				F91F69E62221EE85007E6E97 /* LaunchScreen.storyboard */,
-				F91F69E92221EE85007E6E97 /* Info.plist */,
+				F91F6A0D2221F200007E6E97 /* ViewControllers */,
+				F91F6A0C2221F1F8007E6E97 /* Views */,
+				F91F6A0B2221F164007E6E97 /* Models */,
+				F91F6A0E2221F20F007E6E97 /* SupportFiles */,
 			);
 			path = DeOfHet;
 			sourceTree = "<group>";
@@ -123,6 +131,45 @@
 				F91F69FF2221EE85007E6E97 /* Info.plist */,
 			);
 			path = DeOfHetUITests;
+			sourceTree = "<group>";
+		};
+		F91F6A0B2221F164007E6E97 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F91F6A1E222489EE007E6E97 /* Objects.plist */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F91F6A0C2221F1F8007E6E97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F91F69E12221EE65007E6E97 /* Main.storyboard */,
+				F91F69E62221EE85007E6E97 /* LaunchScreen.storyboard */,
+				F91F6A102221F328007E6E97 /* EmptyCollectionViewCell.swift */,
+				F91F6A142221F594007E6E97 /* TitleCollectionViewCell.swift */,
+				F91F6A182221F67F007E6E97 /* ExampleCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F91F6A0D2221F200007E6E97 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F91F69DF2221EE65007E6E97 /* ViewController.swift */,
+				F91F6A1C2221F9FA007E6E97 /* PracticeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F91F6A0E2221F20F007E6E97 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F91F69E42221EE85007E6E97 /* Assets.xcassets */,
+				F91F69E92221EE85007E6E97 /* Info.plist */,
+				F91F69DD2221EE65007E6E97 /* AppDelegate.swift */,
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F91F69E82221EE85007E6E97 /* LaunchScreen.storyboard in Resources */,
+				F91F6A1F222489EE007E6E97 /* Objects.plist in Resources */,
 				F91F69E52221EE85007E6E97 /* Assets.xcassets in Resources */,
 				F91F69E32221EE65007E6E97 /* Main.storyboard in Resources */,
 			);
@@ -257,6 +305,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F91F69E02221EE65007E6E97 /* ViewController.swift in Sources */,
+				F91F6A162221F595007E6E97 /* TitleCollectionViewCell.swift in Sources */,
+				F91F6A1A2221F67F007E6E97 /* ExampleCollectionViewCell.swift in Sources */,
+				F91F6A1D2221F9FA007E6E97 /* PracticeViewController.swift in Sources */,
+				F91F6A112221F328007E6E97 /* EmptyCollectionViewCell.swift in Sources */,
 				F91F69DE2221EE65007E6E97 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,7 +486,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6AC44Z6PNA;
-				INFOPLIST_FILE = DeOfHet/Info.plist;
+				INFOPLIST_FILE = DeOfHet/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +504,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6AC44Z6PNA;
-				INFOPLIST_FILE = DeOfHet/Info.plist;
+				INFOPLIST_FILE = DeOfHet/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
