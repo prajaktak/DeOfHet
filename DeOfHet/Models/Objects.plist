@@ -6,111 +6,111 @@
 		<key>Name</key>
 		<string>Item1</string>
 		<key>ImageLink</key>
-		<string>Item1</string>
+		<string>Item</string>
 		<key>IsDe</key>
 		<false/>
+		<key>IsHet</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Item2</string>
+		<key>ImageLink</key>
+		<string>Item</string>
+		<key>IsDe</key>
+		<true/>
 		<key>IsHet</key>
 		<false/>
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>Item1</string>
+		<string>Item3</string>
 		<key>ImageLink</key>
-		<string>Item1</string>
+		<string>Item</string>
 		<key>IsDe</key>
-		<false/>
+		<true/>
 		<key>IsHet</key>
 		<false/>
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>Item1</string>
+		<string>Item4</string>
 		<key>ImageLink</key>
-		<string>Item1</string>
+		<string>Item</string>
 		<key>IsDe</key>
 		<false/>
+		<key>IsHet</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Item5</string>
+		<key>ImageLink</key>
+		<string>Item</string>
+		<key>IsDe</key>
+		<true/>
 		<key>IsHet</key>
 		<false/>
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>Item1</string>
+		<string>Item6</string>
 		<key>ImageLink</key>
-		<string>Item1</string>
+		<string>Item</string>
 		<key>IsDe</key>
 		<false/>
+		<key>IsHet</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Item7</string>
+		<key>ImageLink</key>
+		<string>Item</string>
+		<key>IsDe</key>
+		<false/>
+		<key>IsHet</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Item8</string>
+		<key>ImageLink</key>
+		<string>Item</string>
+		<key>IsDe</key>
+		<true/>
 		<key>IsHet</key>
 		<false/>
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>Item1</string>
+		<string>Item9</string>
 		<key>ImageLink</key>
-		<string>Item1</string>
+		<string>Item</string>
 		<key>IsDe</key>
 		<false/>
 		<key>IsHet</key>
-		<false/>
+		<true/>
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>Item1</string>
+		<string>Item10</string>
 		<key>ImageLink</key>
-		<string>Item1</string>
+		<string>Item</string>
 		<key>IsDe</key>
 		<false/>
 		<key>IsHet</key>
-		<false/>
+		<true/>
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>Item1</string>
+		<string>Item11</string>
 		<key>ImageLink</key>
-		<string>Item1</string>
+		<string>Item</string>
 		<key>IsDe</key>
 		<false/>
 		<key>IsHet</key>
-		<false/>
-	</dict>
-	<dict>
-		<key>Name</key>
-		<string>Item1</string>
-		<key>ImageLink</key>
-		<string>Item1</string>
-		<key>IsDe</key>
-		<false/>
-		<key>IsHet</key>
-		<false/>
-	</dict>
-	<dict>
-		<key>Name</key>
-		<string>Item1</string>
-		<key>ImageLink</key>
-		<string>Item1</string>
-		<key>IsDe</key>
-		<false/>
-		<key>IsHet</key>
-		<false/>
-	</dict>
-	<dict>
-		<key>Name</key>
-		<string>Item1</string>
-		<key>ImageLink</key>
-		<string>Item1</string>
-		<key>IsDe</key>
-		<false/>
-		<key>IsHet</key>
-		<false/>
-	</dict>
-	<dict>
-		<key>Name</key>
-		<string>Item1</string>
-		<key>ImageLink</key>
-		<string>Item1</string>
-		<key>IsDe</key>
-		<false/>
-		<key>IsHet</key>
-		<false/>
+		<true/>
 	</dict>
 </array>
 </plist>

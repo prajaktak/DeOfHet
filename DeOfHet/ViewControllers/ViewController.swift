@@ -15,6 +15,11 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     let itemsPerRow  = 3
     let cellPadding = 10
     let cellHeight:CGFloat = 40
+    let articleArray = ["","definiet","indefiniet",
+                        "de-woord","de cursus","een cursus",
+                        "het-woord","het cafe","een cafe",
+                        "diminutief","het rondje","een rondje",
+                        "pluralis","de cafes","cafes"]
     
     
     //MARK: - Class Methods
@@ -46,10 +51,11 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
             
         }else if(indexPath.row == 1 || indexPath.row == 2 || indexPath.row == 3 || indexPath.row == 6 || indexPath.row == 9 || indexPath.row == 12){
             let collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "titleCell", for: indexPath)as! TitleCollectionViewCell
+            collectionViewCell.titleLabel.text = articleArray[indexPath.row]
             return collectionViewCell
-            
         }else {
             let collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "exampleCell", for: indexPath)as! ExampleCollectionViewCell
+            collectionViewCell.exampleLabel.text = articleArray[indexPath.row]
             return collectionViewCell
         }
         

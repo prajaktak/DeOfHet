@@ -7,9 +7,11 @@
 //
 
 import XCTest
+
 @testable import DeOfHet
 
 class DeOfHetTests: XCTestCase {
+    var testDeOfHet:PracticeViewController!
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -18,11 +20,25 @@ class DeOfHetTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testSetInitialArrayOfObjects(){
+        //given
+        testDeOfHet = PracticeViewController()
+        //when
+        testDeOfHet.SetIntialArrayOfObjects()
+        //then
+        XCTAssertNotNil(testDeOfHet.objects)
     }
+
+    func testGetRandomObject(){
+        //given
+        testDeOfHet = PracticeViewController()
+        testDeOfHet.SetIntialArrayOfObjects()
+        //when
+        let obj = testDeOfHet.getRandomObject()
+        //then
+        XCTAssertNotNil(obj)
+    }
+    
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
