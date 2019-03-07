@@ -33,8 +33,9 @@ class PracticeViewController: UIViewController {
     func getRandomObject()-> (NSDictionary){
         return objects[Int.random(in: 0..<objects.count)] as! NSDictionary
     }
+    
     func DisplayRandomObject(){
-        let Object =  getRandomObject()//objects[Int.random(in: 0..<objects.count)] as! NSDictionary
+        let Object =  getRandomObject()
         objectNameLabel.text = Object["Name"] as? String
         objectImageView.image = UIImage(named: Object["ImageLink"] as! String)
         selectedObject = Object
@@ -51,6 +52,7 @@ class PracticeViewController: UIViewController {
         }))
         self.present(alert, animated: true, completion: nil)
     }
+    
     func UpdateObjectArrayAndUI () {
         objects.remove(selectedObject)
         if(objects.count > 0){

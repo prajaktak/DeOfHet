@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>Name</key>
-		<string>Item1</string>
+		<string>adres</string>
 		<key>ImageLink</key>
 		<string>Item</string>
 		<key>IsDe</key>
@@ -14,27 +14,7 @@
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>Item2</string>
-		<key>ImageLink</key>
-		<string>Item</string>
-		<key>IsDe</key>
-		<true/>
-		<key>IsHet</key>
-		<false/>
-	</dict>
-	<dict>
-		<key>Name</key>
-		<string>Item3</string>
-		<key>ImageLink</key>
-		<string>Item</string>
-		<key>IsDe</key>
-		<true/>
-		<key>IsHet</key>
-		<false/>
-	</dict>
-	<dict>
-		<key>Name</key>
-		<string>Item4</string>
+		<string>gezin</string>
 		<key>ImageLink</key>
 		<string>Item</string>
 		<key>IsDe</key>
@@ -44,7 +24,7 @@
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>Item5</string>
+		<string>Zus</string>
 		<key>ImageLink</key>
 		<string>Item</string>
 		<key>IsDe</key>
@@ -54,27 +34,7 @@
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>Item6</string>
-		<key>ImageLink</key>
-		<string>Item</string>
-		<key>IsDe</key>
-		<false/>
-		<key>IsHet</key>
-		<true/>
-	</dict>
-	<dict>
-		<key>Name</key>
-		<string>Item7</string>
-		<key>ImageLink</key>
-		<string>Item</string>
-		<key>IsDe</key>
-		<false/>
-		<key>IsHet</key>
-		<true/>
-	</dict>
-	<dict>
-		<key>Name</key>
-		<string>Item8</string>
+		<string>Broer</string>
 		<key>ImageLink</key>
 		<string>Item</string>
 		<key>IsDe</key>
@@ -84,7 +44,7 @@
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>Item9</string>
+		<string>Haar</string>
 		<key>ImageLink</key>
 		<string>Item</string>
 		<key>IsDe</key>
@@ -94,7 +54,7 @@
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>Item10</string>
+		<string>Seizoen</string>
 		<key>ImageLink</key>
 		<string>Item</string>
 		<key>IsDe</key>
@@ -104,13 +64,143 @@
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>Item11</string>
+		<string>Cafe</string>
 		<key>ImageLink</key>
 		<string>Item</string>
 		<key>IsDe</key>
 		<false/>
 		<key>IsHet</key>
 		<true/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Zomer</string>
+		<key>ImageLink</key>
+		<string>Item</string>
+		<key>IsDe</key>
+		<true/>
+		<key>IsHet</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Maand</string>
+		<key>ImageLink</key>
+		<string>Item</string>
+		<key>IsDe</key>
+		<true/>
+		<key>IsHet</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Cursus</string>
+		<key>ImageLink</key>
+		<string>Item</string>
+		<key>IsDe</key>
+		<true/>
+		<key>IsHet</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Kantine</string>
+		<key>ImageLink</key>
+		<string>Item</string>
+		<key>IsDe</key>
+		<true/>
+		<key>IsHet</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Land</string>
+		<key>ImageLink</key>
+		<string>Item</string>
+		<key>IsDe</key>
+		<false/>
+		<key>IsHet</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Rondje</string>
+		<key>ImageLink</key>
+		<string>Item</string>
+		<key>IsDe</key>
+		<false/>
+		<key>IsHet</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Koffie</string>
+		<key>ImageLink</key>
+		<string>Item</string>
+		<key>IsDe</key>
+		<true/>
+		<key>IsHet</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Pauze</string>
+		<key>ImageLink</key>
+		<string>Item</string>
+		<key>IsDe</key>
+		<true/>
+		<key>IsHet</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Foto</string>
+		<key>ImageLink</key>
+		<string>Item</string>
+		<key>IsDe</key>
+		<true/>
+		<key>IsHet</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Biertje</string>
+		<key>ImageLink</key>
+		<string>Item</string>
+		<key>IsDe</key>
+		<false/>
+		<key>IsHet</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Tekst</string>
+		<key>ImageLink</key>
+		<string>Item</string>
+		<key>IsDe</key>
+		<true/>
+		<key>IsHet</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Man</string>
+		<key>ImageLink</key>
+		<string>Item</string>
+		<key>IsDe</key>
+		<true/>
+		<key>IsHet</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Vrouw</string>
+		<key>ImageLink</key>
+		<string>Item</string>
+		<key>IsDe</key>
+		<true/>
+		<key>IsHet</key>
+		<false/>
 	</dict>
 </array>
 </plist>
