@@ -1,0 +1,6 @@
+framework module Pods_DeOfHetTests {
+  umbrella header "Pods-DeOfHetTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

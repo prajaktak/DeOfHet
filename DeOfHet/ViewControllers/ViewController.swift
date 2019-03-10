@@ -13,8 +13,9 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
 
     @IBOutlet weak var ArticleCollectionView: UICollectionView!
     let itemsPerRow  = 3
-    let cellPadding = 10
-    let cellHeight:CGFloat = 40
+    let cellPadding = 0
+    let cellHeight:CGFloat = 50
+    
     let articleArray = ["","definiet","indefiniet",
                         "de-woord","de cursus","een cursus",
                         "het-woord","het cafe","een cafe",
@@ -44,18 +45,25 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let imgView = UIImageView(image: UIImage(named: "border"))
         
         if (indexPath.row == 0){
             let collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "emptyCell", for: indexPath)as! EmptyCollectionViewCell
+            imgView.frame = collectionViewCell.frame
+            collectionViewCell.backgroundView?.addSubview(imgView)
             return collectionViewCell
             
         }else if(indexPath.row == 1 || indexPath.row == 2 || indexPath.row == 3 || indexPath.row == 6 || indexPath.row == 9 || indexPath.row == 12){
             let collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "titleCell", for: indexPath)as! TitleCollectionViewCell
             collectionViewCell.titleLabel.text = articleArray[indexPath.row]
+            imgView.frame = collectionViewCell.frame
+            collectionViewCell.addSubview(imgView)
             return collectionViewCell
         }else {
             let collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "exampleCell", for: indexPath)as! ExampleCollectionViewCell
             collectionViewCell.exampleLabel.text = articleArray[indexPath.row]
+            imgView.frame = collectionViewCell.frame
+            collectionViewCell.addSubview(imgView)
             return collectionViewCell
         }
         
