@@ -8,14 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout{
+class ViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate{
 
 
+    @IBOutlet weak var letsPracticeButton: UIButton!
     @IBOutlet weak var ArticleCollectionView: UICollectionView!
     let itemsPerRow  = 3
     let cellPadding = 0
     let cellHeight:CGFloat = 50
     
+    @IBOutlet weak var collectionViewHeight: NSLayoutConstraint!
     let articleArray = ["","definiet","indefiniet",
                         "de-woord","de cursus","een cursus",
                         "het-woord","het cafe","een cafe",
@@ -30,10 +32,17 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     //MARK: - ViewController delegates
     override func viewDidLoad() {
         super.viewDidLoad()
-        ArticleCollectionView.register(EmptyCollectionViewCell.self, forCellWithReuseIdentifier: "emptyCell")
-        ArticleCollectionView.register(TitleCollectionViewCell.self, forCellWithReuseIdentifier: "TitleCell")
-        ArticleCollectionView.register(ExampleCollectionViewCell.self, forCellWithReuseIdentifier: "ExampleCell")
         // Do any additional setup after loading the view, typically from a nib.
+        ArticleCollectionView.register(UINib(nibName: "ArticleCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ArticleCollectionViewCell")
+        ArticleCollectionView.layer.borderWidth = 1.0
+        ArticleCollectionView.layer.borderColor = UIColor.gray.cgColor
+        let rows = ceilf(Float(articleArray.count / itemsPerRow))
+        collectionViewHeight.constant = CGFloat(rows) * cellHeight
+        
+        //Button layout
+//        letsPracticeButton.layer.borderWidth = 1.0
+//        letsPracticeButton.layer.borderColor = UIColor.blue.cgColor
+        letsPracticeButton.layer.cornerRadius = 15.0
     }
     
     //MARK: - Collection view delegates
@@ -41,34 +50,26 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         return 1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 15
+        return articleArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let imgView = UIImageView(image: UIImage(named: "border"))
+       
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ArticleCollectionViewCell", for: indexPath) as! ArticleCollectionViewCell
+        let cellText = articleArray[indexPath.row]
         
         if (indexPath.row == 0){
-            let collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "emptyCell", for: indexPath)as! EmptyCollectionViewCell
-            imgView.frame = collectionViewCell.frame
-            collectionViewCell.backgroundView?.addSubview(imgView)
-            return collectionViewCell
-            
-        }else if(indexPath.row == 1 || indexPath.row == 2 || indexPath.row == 3 || indexPath.row == 6 || indexPath.row == 9 || indexPath.row == 12){
-            let collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "titleCell", for: indexPath)as! TitleCollectionViewCell
-            collectionViewCell.titleLabel.text = articleArray[indexPath.row]
-            imgView.frame = collectionViewCell.frame
-            collectionViewCell.addSubview(imgView)
-            return collectionViewCell
+            cell.setup(aType: .empty, value: cellText)
+        }else if(indexPath.row <= 3 || indexPath.row % 3 == 0){
+           cell.setup(aType: .title, value: cellText)
         }else {
-            let collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "exampleCell", for: indexPath)as! ExampleCollectionViewCell
-            collectionViewCell.exampleLabel.text = articleArray[indexPath.row]
-            imgView.frame = collectionViewCell.frame
-            collectionViewCell.addSubview(imgView)
-            return collectionViewCell
+            cell.setup(aType: .value, value: cellText)
         }
-        
+        return cell
     }
-  
+}
+
+extension ViewController:UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize  {
@@ -78,7 +79,11 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         
         return CGSize(width: widthPerItem, height: cellHeight)
     }
-
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
 }
-
 
